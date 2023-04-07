@@ -139,6 +139,7 @@ color: var(--mail-color, #404bbf);
 
 .address {
 display: flex;
+gap: 40px;
 }
 
 .address-link {
@@ -149,7 +150,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--second-adress-color, #434455);
-margin-left: 40px;
+/* margin-left: 40px; */
 }
 .header-address {
 font-style: normal;
@@ -241,6 +242,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize; 
 color: var(--second-title-color, #2E2F42);
+margin-bottom: 72px;
 }
 
 .work-list {
@@ -249,14 +251,15 @@ align-items: center;
 gap: 24px;
 }
 
-.work-item {
-margin-top: 72px;
-}
 
 /* Team-section */
 
 .team-section {
     background: var(--background-team-color, #F4F4FD);
+}
+
+.team-section>.conteiner {
+    flex-direction: column;
 }
 
 .team-title {
@@ -266,19 +269,19 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--second-title-color, #2E2F42);
-padding-bottom: 72px;
+margin-bottom: 72px;
 }
 
 .team-list {
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-margin: 0 -12px;
 }
 
 .team-item {
-padding: 0 12px;
-flex-basis: calc((100%-4)/4);
+display: flex;
+gap: 24px;
+flex-basis: calc((100%-24px)/4);
 }
 
 .team-item-inner {
@@ -358,6 +361,7 @@ margin-top: 16px;
 
 /* Portfolio Hero section */
 .portfolio-hero {
+padding-top: 96px;
 padding-bottom: 72px;
 }
 
