@@ -281,7 +281,7 @@ flex-wrap: wrap;
 .team-item {
 display: flex;
 gap: 24px;
-flex-basis: calc((100%-24px)/4);
+flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-item-inner {
